@@ -15,7 +15,7 @@ body, body.grade-page {
   /* 内容排版 */
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   justify-content: flex-start;
 
   /* 背景 */
@@ -24,6 +24,7 @@ body, body.grade-page {
 
   /* ⭐ 给固定 Logo 让位（非常重要） */
   padding-top: 90px;
+  padding-left: 90px;
 }
 
 /* ==========================
@@ -55,23 +56,10 @@ width:auto;
     height: 60px;
   }
 
- @media (max-width: 480px) {
-
   .question {
-    width: 100%;
-    max-width: 560px;
-    padding: 14px 12px;
+    width: 90%;
+    padding: 15px;
   }
-
-  .question label {
-    gap: 4px;
-    font-size: 15px;
-  }
-
-  input[type="radio"] {
-    transform: scale(0.95);
-  }
-}
 
   form#parentForm {
     width: 90%;
@@ -149,11 +137,8 @@ h1, h2 {
 }
 
 .question label {
-  display: flex;
-  align-items: center;
-  gap: 3px;           /* 🔥 控制圈和字的距离 */
-  margin: 6px 0;
-  cursor: pointer;
+  display: block;
+  margin: 4px 0;
 }
 
 /* ==========================
@@ -199,9 +184,8 @@ input {
   padding: 10px;
   border-radius: 10px;
   border: 1px solid #ccc;
-  width: 20px;
+  width: 220px;
   font-size: 16px;
   background-color: #fff8dc;
   cursor: pointer;
 }
-
