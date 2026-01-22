@@ -46,10 +46,12 @@ width:auto;
    手机端适配
 ========================== */
 @media (max-width: 480px) {
+
   body, body.grade-page {
     font-size: 16px;
     padding-top: 80px;
-    padding-left: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .logo {
@@ -57,9 +59,15 @@ width:auto;
   }
 
   .question {
-    width: 90%;
-    padding: 15px;
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+    margin: 14px auto;
+
+    text-align: center;   /* 题目居中 */
   }
+}
+
 
   form#parentForm {
     width: 90%;
@@ -137,9 +145,20 @@ h1, h2 {
 }
 
 .question label {
-  display: block;
-  margin: 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;              /* 圈圈和文字距离 */
+  margin: 6px auto;
+
+  width: 100%;
+  max-width: 320px;      /* 整组选项居中 */
+  text-align: left;
 }
+.question input[type="radio"] {
+  margin: 0;
+  transform: scale(1.2);
+}
+
 
 /* ==========================
    按钮
@@ -189,3 +208,4 @@ input {
   background-color: #fff8dc;
   cursor: pointer;
 }
+
